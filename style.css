@@ -1,0 +1,75 @@
+h1 {
+    text-align: center;
+}
+
+#sudoku-board {
+    display: flex; 
+    align-items: center; 
+    flex-direction: column;
+    border-collapse: collapse;
+}
+
+.sudoku-box {
+    border: 1px solid gray;
+    font-size: 2.5rem;
+    font-weight: 700;
+    height: 3rem;
+    width: 3rem;
+    justify-content: center;
+    text-transform: uppercase;
+    padding: 0;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.sudoku-row {
+    display: flex; 
+    padding: 0;
+    border-collapse: collapse;
+}
+
+.sudoku-row:nth-child(3n) {
+    border-bottom: 2px solid black;
+}
+
+.sudoku-box:nth-child(3n) {
+    border-right: 2px solid black;
+}
+
+
+#keyboard-cont {
+    margin: 1rem 0; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+}
+
+#keyboard-cont-div {
+    display: flex;
+}
+
+.second-row {
+    margin: 0.5rem 0;
+}
+
+.keyboard-button {
+    font-size: 1rem; 
+    font-weight: 700; 
+    padding: 0.5rem; 
+    margin: 0 2px; 
+    cursor: pointer; 
+    text-transform: uppercase;
+}
+
+
+.highlighted-box {
+    background-color: rgb(187, 217, 215); 
+}
+
+.preFilled {
+    background-color: rgb(127, 249, 255);
+}
+
+.solved-box {
+    background-color: rgb(119, 164, 225);
+}
